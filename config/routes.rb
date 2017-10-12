@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  get 'chart/time'
+
+  get 'chart/feed'
+
   root 'static_pages#home'
   
   get 'static_pages/home'
