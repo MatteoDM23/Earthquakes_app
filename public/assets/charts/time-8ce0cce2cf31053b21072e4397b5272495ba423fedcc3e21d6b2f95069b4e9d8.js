@@ -25,10 +25,7 @@ $(document).ready(function() {
             text: 'Magnitudes of earthquakes over time'
         },
         xAxis: {
-            type: 'datetime',
-            title: {
-                text: 'Time'
-            }
+            type: 'datetime'
         },
         yAxis: {
             title: {

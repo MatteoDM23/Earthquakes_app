@@ -1,4 +1,8 @@
+alert('outside');
+
 $(document).ready(function() {
+    
+    alert('asfd');
     
     var earthquakeData = $("#items").data("url");
     var chartData = [];
@@ -11,8 +15,6 @@ $(document).ready(function() {
         inner.push(parseFloat(earthquakeData[i].mag));
         chartData.push(inner);
     }
-    
-    console.log(chartData);
 
     Highcharts.chart('container', {
         chart: {
@@ -25,10 +27,7 @@ $(document).ready(function() {
             text: 'Magnitudes of earthquakes over time'
         },
         xAxis: {
-            type: 'datetime',
-            title: {
-                text: 'Time'
-            }
+            type: 'datetime'
         },
         yAxis: {
             title: {

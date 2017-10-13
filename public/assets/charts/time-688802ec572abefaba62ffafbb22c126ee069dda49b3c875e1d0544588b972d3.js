@@ -1,4 +1,4 @@
-$(document).ready(function() {
+//$(document).ready(function() {
     
     var earthquakeData = $("#items").data("url");
     var chartData = [];
@@ -25,10 +25,7 @@ $(document).ready(function() {
             text: 'Magnitudes of earthquakes over time'
         },
         xAxis: {
-            type: 'datetime',
-            title: {
-                text: 'Time'
-            }
+            type: 'datetime'
         },
         yAxis: {
             title: {
@@ -71,4 +68,4 @@ $(document).ready(function() {
             data: chartData
         }]
     });
-});
+//});
