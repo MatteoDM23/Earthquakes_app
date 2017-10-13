@@ -1,5 +1,7 @@
 $(document).ready(function() {
     
+    alert('asfd');
+    
     var earthquakeData = $("#items").data("url");
     var chartData = [];
     
