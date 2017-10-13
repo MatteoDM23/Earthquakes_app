@@ -1,8 +1,4 @@
-alert('outside');
-
-$(document).ready(function() {
-    
-    alert('asfd');
+//$(document).ready(function() {
     
     var earthquakeData = $("#items").data("url");
     var chartData = [];
@@ -15,6 +11,8 @@ $(document).ready(function() {
         inner.push(parseFloat(earthquakeData[i].mag));
         chartData.push(inner);
     }
+    
+    console.log(chartData);
 
     Highcharts.chart('container', {
         chart: {
@@ -70,4 +68,4 @@ $(document).ready(function() {
             data: chartData
         }]
     });
-});
+//});
