@@ -8,6 +8,11 @@ var radius = 1000;
 var url = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime="+starttime+"&endtime="+endtime+"&limit="+limit+"&latitude="+lat+"&longitude="+lon+"&maxradiuskm="+radius+"";
 
 $(document).ready(function() {
+    
+    //generate Autocomplete
+    var input = document.getElementById('place-input');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+  
     $.get(url, function(data) {
         console.log(data);
         
