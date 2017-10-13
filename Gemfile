@@ -19,7 +19,6 @@ gem 'jbuilder',                '2.7.0'
 gem "highcharts-rails"
 
 group :development, :test do
-
   gem 'byebug',  '9.0.6', platform: :mri
 end
 
