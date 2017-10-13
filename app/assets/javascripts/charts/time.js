@@ -1,5 +1,4 @@
-//$(document).ready(function() {
-$(document).on('turbolinks:load', function() {
+$(document).ready(function() {
     
     var earthquakeData = $("#items").data("url");
     var chartData = [];
