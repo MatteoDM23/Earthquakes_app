@@ -1,3 +1,5 @@
+alert('outside');
+
 $(document).ready(function() {
     
     alert('asfd');
