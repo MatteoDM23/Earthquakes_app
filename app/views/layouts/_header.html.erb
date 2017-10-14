@@ -1,0 +1,18 @@
+<!-- A partial file that links to the application layout file for the header class
+of the website's pages (the navigation bar at the top) -->
+
+
+ <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to "earthquake app", root_path, id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",   root_path %></li>
+            <li><%= link_to "Help",   help_path %></li>
+            <li><%= link_to "Log in", '#' %></li>
+            <li><%= link_to "Charts", time_path %></li>
+            <li><%= link_to "Live Feed", feed_path %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
