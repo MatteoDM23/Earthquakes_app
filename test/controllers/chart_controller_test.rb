@@ -1,14 +1,22 @@
 require 'test_helper'
 
 class ChartControllerTest < ActionDispatch::IntegrationTest
+   
+    def setup
+    @base_title2 = "CS2012 Assignment 2: Earthquake Data App"
+  end
+  
+  
   test "should get time" do
-    get chart_time_url
+    get time_path
     assert_response :success
+    assert_select "title", "#{@base_title2}"
   end
 
   test "should get feed" do
-    get chart_feed_url
+    get feed_path
     assert_response :success
+    assert_select "title", "#{@base_title2}"
   end
 
 end
