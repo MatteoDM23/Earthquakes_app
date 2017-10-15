@@ -1,8 +1,11 @@
+# This is the controller for the application's pages. Each method below has a corresponding view page.  
+
+
 class StaticPagesController < ApplicationController
   def home
   end
 
-  def help
+  def donate
   end
   
   def about

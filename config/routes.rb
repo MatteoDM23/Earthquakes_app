@@ -1,10 +1,13 @@
+#This is the routes file for the application. URLs are mapped to the correct controller and the controller method. This in turn 
+# leads the URL to the correct viewing page.
+
 Rails.application.routes.draw do
   
 
 
   root 'static_pages#home'
   
-  get  '/help',    to: 'static_pages#help'
+  get  '/donate',    to: 'static_pages#donate'
   get  '/about',   to: 'static_pages#about'
   get  '/contact', to: 'static_pages#contact'
   
