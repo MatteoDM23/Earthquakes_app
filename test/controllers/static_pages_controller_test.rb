@@ -1,3 +1,6 @@
+# This is a test file used for the test driven development process. Each test ensures the URL of each page can be accessed,
+# and the title of each page is correct.
+
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
@@ -12,10 +15,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "#{@base_title1}"
   end
   
-  test "should get help" do
-    get help_path
+  test "should get donate" do
+    get donate_path
     assert_response :success
-    assert_select "title", "Help | #{@base_title1}"
+    assert_select "title", "Donate | #{@base_title1}"
   end
   
   test "should get about" do
