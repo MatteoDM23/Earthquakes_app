@@ -11,10 +11,8 @@ Rails.application.routes.draw do
   get  '/time', to: 'chart#time'
   get  '/feed', to: 'chart#feed'
   
-  
   get '/signup', to: 'users#new'
-  
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  
+  post '/signup',  to: 'users#create'
+  resources :users
 
 end
