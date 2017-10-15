@@ -1,13 +1,13 @@
 <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBjwNwMzGpr13bzBoWDc11huaDj4zDnn9g&libraries=visualization,places', 'data-turbolinks-track': 'reload' %>
 
-<h1>Earthquake Feed</h1>
+<h1 id="heading">Earthquake Feed</h1>
 <h3 id="live-label">Lifefeed for the last 5 days <span id="result-count"></span></h3>
 
 <div class="top-row">
     <div class="location-input filter-option">
         <input id="place-input" class="controls" type="text" placeholder="Enter a location">
     </div>
-    <div class="filter-option">
+    <div class="filter-option range">
         <div class="magnitude-label">min magnitude: 0</div>
         <div id="magnitude"></div>
     </div>

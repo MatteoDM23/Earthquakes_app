@@ -35,3 +35,56 @@
 .filter-option.search {
     text-align: center;
 }
+
+span.ui-slider-handle.ui-corner-all.ui-state-default {
+    background-color: #4169E1;
+    cursor: pointer;
+}
+
+button#start-feed-search:hover {
+    background-color: #4169E1;
+    color: #fff;
+}
+
+#start-feed-search {
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 80%;
+}
+
+.filter-option.range {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .container.main {
+        position: relative;
+        top: 180px;
+    }
+}
+
+@media screen and (max-width: 579px) {
+    .top-row {
+        flex-direction: column;    
+    }
+    
+    .filter-option {
+        margin: 13px 0px;
+        width: 90%;
+    }
+    
+    .filter-option.range {
+        margin-left: 0px;
+    }
+    
+    #place-input {
+        max-width: 100%;
+    }
+    
+    #live-label {
+        text-align: center;
+    }
+}
