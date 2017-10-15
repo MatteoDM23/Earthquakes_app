@@ -17,3 +17,4 @@
 //= require highcharts/highcharts-more
 //= require rails-ujs
 //= require_tree .
+//= require bootstrap
