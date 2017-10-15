@@ -10,8 +10,8 @@ of the website's pages (the navigation bar at the top) -->
             <li><%= link_to "Home",   root_path %></li>
             <li><%= link_to "Help",   help_path %></li>
             <li><%= link_to "Log in", '#' %></li>
-            <li><%= link_to "Charts", time_path %></li>
-            <li><%= link_to "Live Feed", feed_path %></li>
+            <li><%= link_to "Charts", time_path, :"data-turbolinks" => false %></li>
+            <li><%= link_to "Live Feed", feed_path, :"data-turbolinks" => false %></li>
           </ul>
         </nav>
       </div>
