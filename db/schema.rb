@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171012170916) do
+ActiveRecord::Schema.define(version: 20171017155940) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20171012170916) do
   end
 
   create_table "earthquakes", force: :cascade do |t|
-    t.date "time"
+    t.datetime "time"
     t.integer "latitude"
     t.integer "longitude"
     t.integer "depth"

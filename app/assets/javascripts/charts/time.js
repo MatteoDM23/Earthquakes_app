@@ -7,15 +7,19 @@ if (window.location.pathname.indexOf("feed") == -1) {
         for (var i = 0; i < earthquakeData.length; i++) {
             var inner = [];
             var date = new Date(earthquakeData[i].time);
-    
+            
             inner.push(date.getTime());
             inner.push(parseFloat(earthquakeData[i].mag));
+            inner.push(earthquakeData[i].place);
             chartData.push(inner);
         }
     
+        console.log(chartData);
+    
         Highcharts.chart('container', {
             chart: {
-                zoomType: 'x'
+                zoomType: 'x',
+                backgroundColor: 'rgba(255, 255, 255, 0.0)',
             },
             credits: {
                 enabled: false
@@ -37,6 +41,20 @@ if (window.location.pathname.indexOf("feed") == -1) {
             },
             legend: {
                 enabled: false
+            },
+            tooltip : {
+                formatter: function() {
+                    var index = this.point.index;
+                    console.log(chartData[index][2]);
+                    
+                    var tooltip = '<div class="tooltip-main">';
+                    tooltip += '<h3>'+chartData[index][2]+'</h3><br>';
+                    tooltip += '<div class="label">Time: '+new Date(chartData[index][0])+'</div><br>';
+                    tooltip += '<div class="label">Magnitude: '+chartData[index][1]+'</div><br>';
+                    tooltip += '</div>';
+                    
+                    return tooltip;
+                }
             },
             plotOptions: {
                 area: {
