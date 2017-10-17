@@ -1,10 +1,12 @@
 require 'test_helper'
 
 class ChartControllerTest < ActionDispatch::IntegrationTest
+
+if 
    
     def setup
     @base_title2 = "CS2012 Assignment 2: Earthquake Data App"
-  end
+    end
   
   
   test "should get time" do
