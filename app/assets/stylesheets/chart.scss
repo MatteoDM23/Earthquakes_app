@@ -66,6 +66,12 @@ button#start-feed-search:hover {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .filter-option.magnitude {
+        margin: 0 35px;
+    }
+}
+
 @media screen and (max-width: 579px) {
     .top-row {
         flex-direction: column;    

@@ -169,6 +169,10 @@ input {
   height: auto !important;
 }
 
+ul.nav li:first-child {
+    clear: both;
+}
+
 #error_explanation {
   color: red;
   ul {
