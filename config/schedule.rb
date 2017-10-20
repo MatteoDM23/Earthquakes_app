@@ -22,6 +22,6 @@
 set :environment, "development"
 set :output, {:error => "log/cron_error_log.log", :standard => "log/cron_log.log"}
 
-every 2.weeks do
+every 4.weeks do
     rake "earthquakes:parse_eq"
 end
