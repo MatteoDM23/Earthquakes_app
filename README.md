@@ -33,8 +33,8 @@ Password: Pa55word
 
 This app was created by:
 
-Matteo De Michele
-Martin Islitzer
-Kristian Neal
+Matteo De Michele: Responsible For - Authentication System, layout and Report Sections 1.0, 2.5, 2.7 & 3.
+Martin Islitzer: Responsible For - Charts and Live Feed Map, Report Sections 2.3, 2.4 and 3.
+Kristian Neal: Responsible For - PostgreSQL install, static pages, layout including bootstrap and Report Sections 2.1, 2.2, 2.6, 2.8 & 3.
 
 
