@@ -25,6 +25,10 @@ Once started, please enter:
 rails db:create
 rails db:migrate
 
+To stop the server, enter:
+
+sudo service postgresql stop
+
 The app can be accessed on Heroku at the following link:
 https://morning-wave-97685.herokuapp.com/
 
