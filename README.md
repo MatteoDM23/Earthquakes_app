@@ -1,24 +1,40 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The earthquake app provides relevant real-time information of the earthquakes 
+happening in the world. It retrieves data supplied by https://earthquake.usgs.gov
+and parses them in a visual form using charts and live maps. Navigating from the
+homepage, guests users can access the About and the Donate pages, while access 
+to the graphic features requires the user to register and sign-in with an 
+authentic email address. The application has been developed using the Rails 5.1.2 
+framework and it embeds the MVC architecture. The charting features have been 
+developed using JQuery and implemented into the framework using Rails-jquery.
 
-Things you may want to cover:
+Once the app is downloaded, in order to run the application on the rails server 
+the PostgreSQL server must be installed and started. In your directory where this 
+app is installed, enter the following commands into the console:
 
-* Ruby version
+sudo apt-get update
+sudo apt-get install postgresql postgresql-contrib
+ 
+Then,
 
-* System dependencies
+sudo service postgresql start
 
-* Configuration
+Once started, please enter:
 
-* Database creation
+rails db:create
+rails db:migrate
 
-* Database initialization
+The app can be accessed on Heroku at the following link:
+https://morning-wave-97685.herokuapp.com/
 
-* How to run the test suite
+Login: kristian.neal.16@aberdeen.ac.uk
+Password: Pa55word
 
-* Services (job queues, cache servers, search engines, etc.)
+This app was created by:
 
-* Deployment instructions
+Matteo De Michele
+Martin Islitzer
+Kristian Neal
 
-* ...
+
