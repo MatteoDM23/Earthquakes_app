@@ -15,8 +15,26 @@ $gray-medium-light: #eaeaea;
 
 body {
   padding-top: 60px;
-  background-color: #edead3;
-  background-image: url(https://www.transparenttextures.com/patterns/brick-wall.png);
+  text-align: center;
+  background-image: url("background.png");
+  background-size: cover;
+  .box_homepage {
+    background-color: rgba(78, 79, 78, 0.3);
+    .knockout {
+    background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
+    -webkit-background-clip: text;
+    // font-weight: bold;
+      h1 {
+      color: rgba(93,181,94, 1.0);
+      text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+      font-family: "georgia";
+      font-size: 100px;
+      }
+      h2 {
+        color: #d5d8d4;
+      }
+    }
+  }
 }
 
 section {
