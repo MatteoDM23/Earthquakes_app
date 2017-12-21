@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get  '/donate',    to: 'static_pages#donate'
   get  '/about',   to: 'static_pages#about'
   get  '/contact', to: 'static_pages#contact'
+  get '/profile', to: 'users#show'
   get  '/time', to: 'chart#time'
   get  '/feed', to: 'chart#feed'
   

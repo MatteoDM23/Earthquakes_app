@@ -19,7 +19,7 @@ if (window.location.pathname.indexOf("feed") == -1) {
         Highcharts.chart('container', {
             chart: {
                 zoomType: 'x',
-                backgroundColor: 'rgba(255, 255, 255, 0.0)',
+                backgroundColor: 'rgba(255, 255, 255, 0.7)',
             },
             credits: {
                 enabled: false
