@@ -1,11 +1,13 @@
 <% provide(:title, @user.name) %>
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
+<div class="jumbotron box_homepage">
+  <div class="knockout">
+    <div class="row">
+      <aside class="col-md-4">
+        <section class="user_info">
+          <h1><%= gravatar_for @user %> <%= @user.name %></h1>
+          <h2>Dear <%= @user.name %>, you registered to The Earthquake App app using <%= @user.email %> email</p>
+        </section>
+      </aside>
+    </div>
+  </div>
 </div>

@@ -1,17 +1,15 @@
-<!-- This is the view page for the "About" link. It features a brief description of what the site entails and links to 
-internal pages.--> 
-
 <% provide(:title, "About") %>
-
+<div class="jumbotron box_homepage">
+  <div class="knockout">
     <h1>About</h1>
-    <p>
-      This application allows users to see earthquake data in a visual form using <%= link_to "charts", time_path, :"data-turbolinks" => false %>
-      
-      and <%= link_to "live maps", feed_path, :"data-turbolinks" => false %> where you can see live earthquake data from anywhere
-      in the world. 
-      
-    </p>
-    
-    <p>A user can create an account, view earthquake data and link to charity sites where donatations for 
-       <%= link_to "earthquake relief efforts", donate_path %> can be made.
-    </p>
+    <br>
+    <h2>This application allows users to see earthquake data in a visual form using 
+    <%= link_to "charts", time_path, :"data-turbolinks" => false %>
+    and 
+    <%= link_to "live maps", feed_path, :"data-turbolinks" => false %> 
+    where you can see live earthquake data from anywhere in the world.</h2>
+    <h2>A user can create an account, view earthquake data and link to charity sites where donatations for 
+    <%= link_to "earthquake relief efforts", donate_path %> can be made.</h2>
+    <br>
+  </div>
+</div>
